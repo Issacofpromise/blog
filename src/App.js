@@ -32,6 +32,7 @@ let data = a.map((c, i) => ({ a: c, 따봉: 따봉[i], tim: tim[i],moda:i }));
   <input ref={inputRef_2} onChange={w=>{ dex_2(w.target.value)}} />
   <button onClick={() => {if (moda_2 !== '') { 
     let ne = [...a]; ne[moda] = moda_2;b(ne); dex_2('');inputRef_2.current.value = ''}}}>내용수정</button> 
+<span style={{ fontSize: '12px', fontWeight: 'bold' }}>  수정 하려는 글 제목 클릭</span>
  {modal == true ? <Modal color={'#FCE2DA'} a={a} b={b} i={moda} tim={tim}/> : null}
     </div>
   )}; 
